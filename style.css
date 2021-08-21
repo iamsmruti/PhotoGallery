@@ -123,12 +123,14 @@ nav{
 }
 
 footer{
+    position: sticky;
+    bottom: 0px;
     display: flex;
     align-items: center;
     background-color: var(--color4);
     border-style: solid;
     border-color: var(--color2) transparent transparent transparent;
-    height: 60px;
+    height: 40px;
 }
 
 footer p{
