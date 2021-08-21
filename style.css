@@ -1,0 +1,186 @@
+:root{
+    --color1 : #FFFFFF;
+    --color2 : #D52941;
+    --color3 : #FCD581;
+    --color4 : #FFF8E8;
+    --font : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font);
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color1);
+}
+
+nav{
+    background-color: var(--color4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-color: transparent transparent var(--color2) transparent;
+    position: sticky;
+    top: 0px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo i{
+    font-size: 30px;
+    padding: 1.5rem;
+    color: var(--color3);
+}
+
+.logo h3{
+    letter-spacing: 4px;
+    margin: 1.5rem 0;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--color2);
+}
+
+.links ul{
+    display: flex;
+}
+
+.links ul li{
+    list-style: none;
+}
+
+.links ul li a{
+    text-decoration: none;
+    padding: 2rem;
+    color: var(--color2);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1{
+    grid-area: img-1;
+}
+
+.img2{
+    grid-area: img-2;
+}
+
+.img3{
+    grid-area: img-3;
+}
+
+.img4{
+    grid-area: img-4;
+}
+
+.img5{
+    grid-area: img-5;
+}
+
+.img6{
+    grid-area: img-6;
+}
+
+.img7{
+    grid-area: img-7;
+}
+
+.gallery{
+    padding: 2rem;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+    grid-template-areas: 
+        "img-1 img-1 img-1 img-2"
+        "img-1 img-1 img-1 img-3"
+        "img-4 img-4 img-5 img-5"
+        "img-4 img-4 img-5 img-5"
+        "img-4 img-4 img-6 img-7";
+}
+
+.gallery div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gallery div img{
+    
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    background-color: var(--color4);
+    border-style: solid;
+    border-color: var(--color2) transparent transparent transparent;
+    height: 60px;
+}
+
+footer p{
+    position: absolute;
+    right: 30px;
+}
+
+footer span{
+    color: var(--color2);
+}
+
+@media only screen and (max-width: 768px){
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+
+        grid-template-areas: 
+            "img-1 img-1 img-1 img-1"
+            "img-1 img-1 img-1 img-1"
+            "img-1 img-1 img-1 img-1"
+            "img-2 img-2 img-3 img-3"
+            "img-2 img-2 img-3 img-3"
+            "img-4 img-4 img-4 img-4"
+            "img-4 img-4 img-4 img-4"
+            "img-4 img-4 img-4 img-4"
+            "img-4 img-4 img-4 img-4"
+            "img-4 img-4 img-4 img-4"
+            "img-4 img-4 img-4 img-4"
+            "img-5 img-5 img-5 img-5"
+            "img-5 img-5 img-5 img-5"
+            "img-5 img-5 img-5 img-5"
+            "img-5 img-5 img-5 img-5"
+            "img-6 img-6 img-7 img-7"
+            "img-6 img-6 img-7 img-7";
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .logo i{
+        font-size: 20px;
+        padding: 1rem;
+    }
+    
+    .logo h3{
+        letter-spacing: 2px;
+        margin: 1rem 0;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .gallery{
+        width: 95%;
+        padding: 1rem;
+    }
+}
