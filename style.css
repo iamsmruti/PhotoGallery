@@ -15,6 +15,7 @@
 
 body{
     background-color: var(--color1);
+    height: 100%;
 }
 
 nav{
@@ -96,6 +97,7 @@ nav{
 }
 
 .gallery{
+    min-height: 100vh;
     padding: 2rem;
     width: 90%;
     display: grid;
@@ -123,8 +125,6 @@ nav{
 }
 
 footer{
-    position: sticky;
-    bottom: 0px;
     display: flex;
     align-items: center;
     background-color: var(--color4);
